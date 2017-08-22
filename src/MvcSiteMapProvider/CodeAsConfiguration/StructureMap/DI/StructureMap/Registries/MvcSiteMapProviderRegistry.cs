@@ -13,6 +13,7 @@ using MvcSiteMapProvider.Visitor;
 using MvcSiteMapProvider.Web.Mvc;
 using MvcSiteMapProvider.Web.UrlResolver;
 using MvcSiteMapProvider.Xml;
+using StructureMap;
 
 namespace DI.StructureMap.Registries
 {
