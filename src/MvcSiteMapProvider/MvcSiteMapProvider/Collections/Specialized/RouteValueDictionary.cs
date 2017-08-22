@@ -277,7 +277,7 @@ namespace MvcSiteMapProvider.Collections.Specialized
             // included in the comparison. We only want to match if all of them were considered.
             var remainingList = (from rv in this
                                  where !this.IsEmptyValue(rv.Value)
-                                 where !(routeValues.Keys.Any(x => x == rv.Key))
+                                 where !(routeValues.Keys.Any(x => x.Equals(rv.Key, StringComparison.OrdinalIgnoreCase)))
                                  select rv)
                                 .ToDictionary(x => x.Key);
 
